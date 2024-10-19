@@ -7,12 +7,12 @@ float getFloatFromUser(string title)
     string input;
     cout << title;
     cin >> input;
-    float value = strtol(input.c_str(), &end, 10);
+    float value = strtof(input.c_str(), &end);
     while (*end)
     {
         cout << "Invalid input. Please enter an float: ";
         cin >> input;
-        value = strtol(input.c_str(), &end, 10);
+        value = strtof(input.c_str(), &end);
     }
     return value;
 }
