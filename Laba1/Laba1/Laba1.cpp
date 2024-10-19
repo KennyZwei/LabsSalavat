@@ -3,12 +3,16 @@ using namespace std;
 
 float getFloatFromUser(string title)
 {
-    float value;
+    char* end;
+    string input;
     cout << title;
-    while (!(cin >> value)) {
+    cin >> input;
+    float value = strtol(input.c_str(), &end, 10);
+    while (*end)
+    {
         cout << "Invalid input. Please enter an float: ";
-        cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cin >> input;
+        value = strtol(input.c_str(), &end, 10);
     }
     return value;
 }
@@ -34,5 +38,5 @@ int main()
     cout << "z = " << z << endl;
     cout << "y = " << y << endl;
     cout << "x = " << x << endl;
-
+    return 0;
 }
