@@ -48,7 +48,7 @@ int main()
         cout << "enter n and m. m > n. n != 0. n and m mustn`t be negative" << endl;
         n = getIntFromUser("n: ");
         m = getIntFromUser("m: ");
-    } while (m <= n && n == 0 && ((m > 0 && n < 0) || (m < 0 && n > 0)));
+    } while (m <= n || n == 0 || ((m > 0 && n < 0) || (m < 0 && n > 0)));
 
     if (θ > 1) {
         w = pow(log(calculateφ(θ, n, m)) / log(2), (float)m / (float)n);
