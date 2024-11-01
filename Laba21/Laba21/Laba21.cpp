@@ -43,7 +43,7 @@ int main()
 {
     int n, m;
     float φ, w;
-    float θ = getIntFromUser("o: ");
+    float θ = getFloatFromUser("o: ");
     do {
         cout << "enter n and m. m > n. n != 0. n and m mustn`t be negative" << endl;
         n = getIntFromUser("n: ");
