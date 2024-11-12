@@ -1,5 +1,4 @@
-﻿#define _USE_MATH_DEFINES
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 int getIntFromUser(string title)
