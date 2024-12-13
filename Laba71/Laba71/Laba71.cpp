@@ -22,9 +22,9 @@ void init_arr(int la[], int DIM)
     }
 }
 
-int bits(int la[], int DIM)
+void bits(int la[], int DIM)
 {
-    int j, bitCount, i, ;
+    int j, bitCount, i;
     for (i = 0; i < DIM; i++)
     {
         bitCount = 0;
